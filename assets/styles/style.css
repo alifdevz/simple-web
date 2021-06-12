@@ -2,11 +2,12 @@ body {
     font-family: sans-serif;
 }
 
-h2 {
-    color: #00a2c6;
+/*!important is a property styling to make the browser consider it as important regardless the order. */
+h3 {
+    color: #06a6ca !important;
 }
 
-h3 {
+h2, h3 {
     color: #00a2c6;
 }
 
