@@ -9,6 +9,31 @@
         #special {
             background-color: skyblue;
         }
+
+        /* <a> element yang menerapkan href attribut */
+        a[href] {
+            color: blue;
+        }
+ 
+        /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+        a[href^="#"] {
+            background-color: gold;
+        }
+
+        /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+        a[href*="example"] {
+            background-color: silver;
+        }
+    
+        /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+    
+        /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+        a[href$=".org"] {
+            color: red;
+        }
      </style>
 </head>
 <body>
@@ -20,5 +45,20 @@
     <div>
         <p>Ini merupakan konten di dalam sebuah div biasa.</p>
     </div>
+    <br>
+    <br>
+
+    <!-- 2. Attribute Selector -->
+    <h3>2. Attribute Selector</h3>
+    <ul>
+        <ul>
+            <li><a href="#internal">Internal link</a></li>
+            <li><a href="http://example.com">Example link</a></li>
+            <li><a href="#InSensitive">Insensitive internal link</a></li>
+            <li><a href="http://example.org">Example org link</a></li>
+        </ul>
+     </ul>
+     <br>
+     <br>
 </body>
 </html>
