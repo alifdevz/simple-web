@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combinators</title>
+    <style>
+        /* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+        img + p {
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 1. Adjacent Sibling Selector (+) -->
+    <h3>1. Adjacent Sibling Selector (+)</h3>
+    <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini.</p>
+    <img src="https://i.imgur.com/cs2BJzw.jpg" alt="Dicoding logo" width="400px">
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna hijau.</p>
+    <p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar, namun tidak diletakkan persis setelahnya, sehingga rule tidak akan diterapkan pada elemen ini.</p>
+    <br>
+    <br>
 </body>
 </html>
