@@ -15,6 +15,12 @@
         img ~ p {
             color: green;
         }
+
+        /* Rule akan diterapkan pada elemen paragraf yang merupakan child langsung dari elemen div */
+        div > p {
+            background-color: yellow;
+        }
+   </style>
     </style>
 </head>
 <body>
@@ -36,5 +42,20 @@
         <p>Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, namun paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan menerapkan rule styling karena tidak memiliki induk yang sama.</p>
     </div>
     <p>Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan menerapkan rule dengan menampilkan teks berwarna hijau.</p>
+    <br>
+    <br>
+
+    <!-- 3. Child Selector (>) -->
+    <h3>3. Child Selector (>)</h3>
+    <div>
+        <p>Paragraf pertama. di dalam div.</p>
+        <p>Paragraf kedua. di dalam div.</p>
+        <section><p>Paragraf ketiga. di dalam div namun bukan sebagai anak elemen secara langsung.</p></section>
+        <p>Paragraf keempat. di dalam div.</p>
+     </div>
+     <p>Paragraf kelima. di luar div.</p>
+     <p>Paragraf keenam. di luar div.</p>
+     <br>
+     <br>
 </body>
 </html>
