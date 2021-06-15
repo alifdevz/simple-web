@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Selector</title>
+    <style>
+        /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+        a:link {
+        color: red;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+        a:visited {
+        color: green;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+        a:hover {
+        color: pink;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+        a:active {
+        color:orange;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 1. Pseudo-class Selector -->
+    <h3>1. Pseudo-class Selector</h3>
+    <a href="https://www.google.com">Kunjungi halaman Google</a>
 </body>
 </html>
