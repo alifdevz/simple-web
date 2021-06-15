@@ -8,22 +8,37 @@
     <style>
         /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
         a:link {
-        color: red;
+            color: red;
         }
         
         /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
         a:visited {
-        color: green;
+            color: green;
         }
         
         /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
         a:hover {
-        color: pink;
+            color: pink;
         }
         
         /* rule akan diterapkan pada sebuah tautan ketika ditekan */
         a:active {
-        color:orange;
+            color:orange;
+        }
+
+        /* pseudo-element selector untuk menambahkan tanda kutip pada sebelum dan sesudah blockquote element*/
+        blockquote::before, blockquote::after {
+            content: '"';
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: saddlebrown;
         }
     </style>
 </head>
@@ -31,5 +46,14 @@
     <!-- 1. Pseudo-class Selector -->
     <h3>1. Pseudo-class Selector</h3>
     <a href="https://www.google.com">Kunjungi halaman Google</a>
+    <br>
+    <br>
+
+    <!-- 2. Pseudo-element Selector -->
+    <h3>2. Pseudo-element Selector</h3>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed voluptates. Aliquam aspernatur autem est nobis officia praesentium quas recusandae rem.</blockquote>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt, dicta laudantium quae quam sequi soluta vitae! A,
+        architecto beatae, consequuntur et eveniet fuga laudantium molestias praesentium temporibus, unde velit.</p>
 </body>
 </html>
