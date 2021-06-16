@@ -17,6 +17,8 @@ footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
 }
 
 nav a {
@@ -28,3 +30,7 @@ nav a {
 nav a:hover {
     font-weight: bold;
 }
+
+.profile header {
+    text-align: center;
+ }
