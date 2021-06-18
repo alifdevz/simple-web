@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*!important is a property styling to make the browser consider it as important regardless the order. */
