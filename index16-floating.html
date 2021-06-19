@@ -26,14 +26,14 @@
             box-sizing: border-box;
         }
  
-        .container {
+        .container2 {
             width: 800px;
             height: 400px;
             border: 1px solid black;
             margin: 0 auto;
         }
  
-        .left-content {
+        .left-content1 {
             text-align: center;
             line-height: 400px;
             width: 30%;
@@ -44,7 +44,7 @@
             float: left;
         }
  
-        .right-content {
+        .right-content1 {
             text-align: center;
             line-height: 400px;
             width: 70%;
@@ -53,6 +53,35 @@
  
             /* digunakan untuk memindahkan posisi elemen ke sisi kanan container */
             float: right;
+        }
+
+        .left-content2 {
+            text-align: center;
+            line-height: 400px;
+            width: 33.3%;
+            height: 100%;
+            background-color: #00c7ed;
+            float: left;
+        }
+
+        .center-content {
+            text-align: center;
+            line-height: 400px;
+            width: 33.3%;
+            height: 100%;
+            background-color: #d0b541;
+            float: left;
+        }
+
+        .right-content2 {
+            text-align: center;
+            line-height: 400px;
+            width: 33.3%;
+            height: 100%;
+            background-color: #60d0a8;
+ 
+            /* digunakan untuk memindahkan posisi elemen ke sisi kanan container */
+            float: left;
         }
     </style>
 </head>
@@ -70,13 +99,29 @@
 
     <!-- 2. Use float to position content at the left of container -->
     <h3>2. Use float to position contents at the left and right of container</h3>
-    <div class="container">
-    <div class="left-content">
-        <h3>Left Content</h3>
+    <div class="container2">
+        <div class="left-content1">
+            <h3>Left Content</h3>
+        </div>
+        <div class="right-content1">
+            <h3>Right Content</h3>
+        </div>
     </div>
-    <div class="right-content">
-        <h3>Right Content</h3>
-    </div>
+    <br>
+    <br>
+
+    <!-- 3. Position contents orderly using float css rule -->
+    <h3>3. Position contents orderly using float css rule</h3>
+    <div class="container2">
+        <div class="left-content2">
+            <h3>Left Content</h3>
+        </div>
+        <div class="center-content">
+            <h3>Center Content</h3>
+        </div>
+        <div class="right-content2">
+            <h3>Right Content</h3>
+        </div>
     </div>
 </body>
 </html>
