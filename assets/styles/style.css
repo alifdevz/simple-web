@@ -83,3 +83,8 @@ main {
     float: left;
     width: 75%;
 }
+
+aside {
+    float: right;
+    width: 25%;
+}
