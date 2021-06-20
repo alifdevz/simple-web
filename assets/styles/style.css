@@ -95,6 +95,7 @@ aside {
     box-sizing: border-box;
 }
 
+/* Make the page looks good on mobile devices */
 @media screen and (max-width: 1000px) {
     #content, aside {
         width: 100%;
