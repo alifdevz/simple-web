@@ -26,6 +26,20 @@
         </div>
        
         <script>
+            function increment() {
+                // count = document.getElementById("count").innerText++;
+                c = ++document.getElementById("count").innerText;
+                // console.log(c);
+                if (c == 7) {
+                    const hiddenMessage = document.createElement("h4");
+                    hiddenMessage.innerText = "Selamat! Anda menemukan hadiah tersembunyi....";
+                    const image = document.createElement("img");
+                    image.src = "https://i.ibb.co/0V49VRZ/catto.jpg";
+                    const contents = document.querySelector(".contents");
+                    contents.appendChild(hiddenMessage).appendChild(image);
+                }      
+            }
+            
             function welcome() {
                 alert("Munculkan elemen-elemen HTML!");
                 const contents = document.querySelector(".contents");
@@ -33,6 +47,7 @@
             }
 
             document.body.onload = welcome;
+            document.getElementById("incrementButton").onclick = increment;
         </script>
     </body>
 </html>
