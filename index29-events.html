@@ -3,7 +3,7 @@
     <head>
         <title>Event World</title>
         <style>
-            .contents{
+            .contents {
                 position: fixed;
                 top: 50%;
                 left: 50%;
@@ -13,7 +13,7 @@
                 padding : 15px;
             }
  
-            #generateButton{
+            #generateButton {
                 margin-top : 5px;
                 margin-bottom: 15px;;
             }
@@ -26,7 +26,13 @@
         </div>
        
         <script>
-             // kita akan praktek di sini
+            function welcome() {
+                alert("Munculkan elemen-elemen HTML!");
+                const contents = document.querySelector(".contents");
+                contents.removeAttribute("hidden");
+            }
+
+            document.body.onload = welcome;
         </script>
     </body>
 </html>
