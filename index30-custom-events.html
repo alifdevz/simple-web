@@ -20,12 +20,27 @@
     </head>
     <body>
         <div class="buttons" align="center">
-            <h3 id="caption">Silakan tekan salah satu tombol di bawah...</h3>
+            <h3 id="caption">Silakan tekan tombol di bawah...</h3>
             <button class="button" id="tombol">Tombol Custom Event</button>
         </div>
         
         <script>
-            // tulis kode kamu di sini
+            const changeCaption = new Event("changeCaption");
+
+            window.addEventListener("load", function() {
+                const tombol = document.getElementById("tombol");
+                tombol.addEventListener("changeCaption", customEventHandler);
+                tombol.addEventListener("click", function() {
+                    tombol.dispatchEvent(changeCaption);
+                });
+            });
+            
+            // ev akan secara otomatis diganti dengan event oleh javascript
+            function customEventHandler(ev) {
+                console.log("Event " + ev.type + "telah dijalankan.");
+                const caption = document.getElementById("caption");
+                caption.innerText = "Anda telah membangkitkan custom event";
+            }
         </script>
     </body>
 </html>
