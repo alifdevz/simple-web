@@ -22,7 +22,12 @@
         </div>
  
         <script>
-            // tulis kode Anda di sini
+            const divs = document.getElementsByTagName("div");
+            for(let elmn of divs){
+                elmn.addEventListener("click", function() {
+                    alert("ELEMEN " + elmn.getAttribute("id").toUpperCase());
+                }, true);
+            }
         </script>
     </body>
 </html>
