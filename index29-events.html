@@ -52,6 +52,26 @@
             // document.getElementById("incrementButton").onclick = increment;
             window.addEventListener('load', welcome);
             document.getElementById("incrementButton").addEventListener('click', increment);
+            
+            // or you can do this
+            /* window.addEventListener('load', function() {
+                alert("Munculkan elemen-elemen HTML!");
+                const contents = document.querySelector(".contents");
+                contents.removeAttribute("hidden");
+            });
+
+            document.getElementById("incrementButton").addEventListener('click', function() {
+                c = ++document.getElementById("count").innerText;
+                if (c == 7) {
+                    const hiddenMessage = document.createElement("h4");
+                    hiddenMessage.innerText = "Selamat! Anda menemukan hadiah tersembunyi....";
+                    const image = document.createElement("img");
+                    image.src = "https://i.ibb.co/0V49VRZ/catto.jpg";
+                    const contents = document.querySelector(".contents");
+                    contents.appendChild(hiddenMessage).appendChild(image);
+                }
+            }); */
+            
         </script>
     </body>
 </html>
